@@ -1,0 +1,33 @@
+body {
+
+    background: black;
+
+}
+
+/* div{
+    opacity: 0;
+} */
+
+#a1{
+    background: aqua;
+    font-size: 60px;
+    font-weight: bold;
+}
+
+#b1{
+    background-color: aquamarine;
+    font-size: 200%;
+    font-style: italic;
+    
+}
+
+.blue{
+    background: antiquewhite;
+    font-size: 40px;
+    text-decoration: underline;
+}
+
+.blue:hover{
+    background: yellow;
+    color: red;
+}
