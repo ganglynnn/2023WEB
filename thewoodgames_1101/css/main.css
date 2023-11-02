@@ -114,12 +114,87 @@ a{
     width: 100%;
 }
 
+/* shop.html的CSS */
 
-.shop_content{
+.shop_content>.p_content{
+    font-weight: bold;
+    font-size: 16px;
+    line-height: 20px;
+    letter-spacing: 1.5px;
+    color: #58595B;
+}
+
+.shop_content>.item_wrap{
+    border: 1px solid #898000;
+    font-weight: bold;
 
 }
 
+.shop_content>.item_wrap>.item_row{
+    display: flex;
+    padding: 15px;
+}
 
+.shop_content>.item_wrap>.item_row>div{
+    flex: 1;
+}
+
+.shop_content>.item_wrap>.item_row>.item_left{
+    
+}
+
+.shop_content>.item_wrap>.item_row>.item_mid{
+    
+}
+
+
+.shop_content>.item_wrap>.item_row>.item_right{
+    
+
+}
+
+.shop_content>.item_wrap>.item_row>.item_right>.item_title{
+    border-bottom: 1px solid #898000;
+    padding-bottom: 3px;
+    margin-bottom: 13px;
+}
+
+.item_wrap>.item_row>.item_right>.item_child{
+    display: flex;
+}
+
+
+
+.buy_btn{
+    width: 82px;
+    height: 32px;
+    line-height: 32px;
+    margin-left:30px;
+    background-color: #898000;
+    display: block;
+    border-radius: 14px;
+    font-size: 15px;
+    color: #ffffff;
+    text-align: center;
+    
+}
+
+
+.buy_btn:hover{
+    background-color: #000000;
+}
+
+
+.price_txt{
+    font-size: 17px;
+    color: #898000;
+    margin-bottom: 10px;
+}
+
+.game_txt{
+    font-size: 15px;
+    line-height:19px;
+}
 
 footer{
     width: 100%;
