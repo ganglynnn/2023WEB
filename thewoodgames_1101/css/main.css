@@ -13,57 +13,57 @@ html {
 }
 
 
-ul{
+ul {
     list-style-type: none;
     margin: 0;
     padding: 0;
 }
 
 
-a{
+a {
     text-decoration: none;
 }
 
 
 
-.main{
+.main {
     width: 100%;
     margin: 0 auto;
     max-width: 950px;
     padding: 0 15px;
-    
+
 }
 
-.main>header{
+.main>header {
     text-align: center;
 }
 
-.main>header img.logo{
+.main>header img.logo {
     width: 150px;
     margin-top: 40px;
     margin-bottom: 20px;
 }
 
-.main>nav>ul{
+.main>nav>ul {
     display: flex;
 }
 
 
-.main>nav>ul>li>.nav_item{
+.main>nav>ul>li>.nav_item {
     color: rgb(0, 0, 0);
-    display: block;
     position: relative;
-    
+    z-index: 5;
+
 }
 
 
-.main>nav>ul>li>.nav_item>.nav_child{
+.main>nav>ul>li>.nav_item>.nav_child {
     display: none;
     position: absolute;
     width: 100%;
 }
 
-.main>nav>ul>li>.nav_item>.nav_child a{
+.main>nav>ul>li>.nav_item>.nav_child a {
     background-color: #898000;
     display: block;
     color: #ffffff;
@@ -73,170 +73,279 @@ a{
     padding: 10px 20px;
 }
 
-.main>nav>ul>li>.nav_item>.nav_child a:hover{
+.main>nav>ul>li>.nav_item>.nav_child a:hover {
     background-color: #000;
 }
 
-.main>nav>ul>li>.nav_item:hover{
+.main>nav>ul>li>.nav_item:hover {
     display: block;
     background-color: #DCDDDD;
 }
 
-.main>nav>ul>li>.nav_item:hover .nav_child{
+.main>nav>ul>li>.nav_item:hover .nav_child {
     display: block;
 }
 
-.main>nav{
+.main>nav {
     border-top: 2px solid #898000;
     border-bottom: 2px solid #898000;
     margin-bottom: 20px;
 }
 
-.main>nav>ul>li{
-    /* width: 33.333333%;
-    margin-right: -4px; */
-    flex: 1;
+.main>nav>ul>li {
+    width: 33.333333%;
+    margin-right: -4px;
     height: 70px;
     line-height: 70px;
-    /* display: inline-block; */
+    display: inline-block;
     text-align: center;
     font-size: 28px;
     font-weight: bold;
 }
 
 
-.en_text{
+.en_text {
     color: #898000;
 }
 
 
-.content img{
+.content img {
     width: 100%;
 }
 
 /* shop.html的CSS */
 
-.shop_content>.p_content{
+.shop_content>.p_content {
     font-weight: bold;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 20px;
     letter-spacing: 1.5px;
     color: #58595B;
 }
 
-.shop_content>.item_wrap{
+.shop_content>.item_wrap {
     border: 1px solid #898000;
     font-weight: bold;
 
 }
 
-.shop_content>.item_wrap>.item_row{
+.shop_content>.item_wrap>.item_row {
     display: flex;
     padding: 15px;
+    gap: 15px;
+    border-bottom: 1px solid #898000;
 }
 
-.shop_content>.item_wrap>.item_row>div{
+.shop_content>.item_wrap>.item_row:last-child {
+    border-bottom: none;
+}
+
+/* .shop_content>.item_wrap>.item_row>div{
     flex: 1;
-}
+} */
 
-.shop_content>.item_wrap>.item_row>.item_left{
-    
-}
-
-.shop_content>.item_wrap>.item_row>.item_mid{
-    
-}
-
-
-.shop_content>.item_wrap>.item_row>.item_right{
-    
+.shop_content>.item_wrap>.item_row>.item_left {
+    /* width: 20%; */
+    flex-basis: 20%;
 
 }
 
-.shop_content>.item_wrap>.item_row>.item_right>.item_title{
+.product_img {
+    width: 100%;
+}
+
+.shop_content>.item_wrap>.item_row>.item_mid {
+    width: 40%;
+    display: flex;
+    flex-direction: column;
+    /* justify-content: space-between; */
+    /* position: relative; */
+}
+
+.item_mid>h2 {
+    margin: 0;
+    font-size: 22px;
+    line-height: 25px;
+
+    margin-bottom: auto;
+
+}
+
+.item_mid>.price {
+    font-size: 18px;
+    color: #898000;
+    /* position: absolute;
+    bottom: 0; */
+
+}
+
+.shop_content>.item_wrap>.item_row>.item_right {
+    width: 40%;
+
+}
+
+.shop_content>.item_wrap>.item_row>.item_right>.item_title {
     border-bottom: 1px solid #898000;
     padding-bottom: 3px;
-    margin-bottom: 13px;
+
 }
 
-.item_wrap>.item_row>.item_right>.item_child{
+.item_child {
     display: flex;
+    margin-top: 10px;
+}
+
+.item_child>.item_child_left {
+    margin-right: auto;
 }
 
 
-
-.buy_btn{
+.buy_btn {
     width: 82px;
     height: 32px;
     line-height: 32px;
-    margin-left:30px;
     background-color: #898000;
     display: block;
     border-radius: 14px;
     font-size: 15px;
     color: #ffffff;
     text-align: center;
-    
+
 }
 
 
-.buy_btn:hover{
+.buy_btn:hover {
     background-color: #000000;
 }
 
 
-.price_txt{
+.price_txt {
     font-size: 17px;
     color: #898000;
     margin-bottom: 10px;
 }
 
-.game_txt{
+.game_txt {
     font-size: 15px;
-    line-height:19px;
+    line-height: 19px;
 }
 
-footer{
+footer {
     width: 100%;
-    height: 100px;
+    height: 120px;
     background-color: #898000;
-    margin-top: 30px;
+    margin-top: 50px;
+}
+
+/* flex解決方案1
+
+footer>.main{
     display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 120px;
+} */
+
+/* flex解決方案2
+
+footer>.main{
+    display: flex;
+    height: 120px;
+    padding-top: 20px;
 }
 
-footer>ul{
-    width: 50%;
-    margin-top: 30px;
-    margin-left: 40px;
-}
-
-footer>ul>li{
-    width: 20%;
-    display: inline-block;
-}
-
-footer .social{
-    color: white;
-    font-size: 20px;
-    font-weight: bold;
+footer>.main>ul{
+    display: flex;
+    flex: 1;
 }
 
 footer .copyright{
-    color: white;
-    font-size: 20px;
+    flex: 1;
     text-align: right;
-    width: 50%;
-    margin-top: 30px;
-    margin-right: 50px;
+} */
+
+/* flex解決方案3 */
+
+footer>.main {
+    display: flex;
+    height: 120px;
+    padding-top: 20px;
     font-weight: bold;
-    
 }
 
-@media(max-width:992px){
-    .main>nav>ul>{
+footer>.main>ul {
+
+    width: 50%;
+    display: flex;
+    margin-right: auto;
+    gap: 25px;
+}
+
+footer .social {
+    font-size: 20px;
+    color: #fff;
+}
+
+footer .social:hover {
+    /* text-decoration: underline; */
+    border-bottom: 2px solid #fff;
+    padding-bottom: 5px;
+}
+
+footer .copyright {
+    color: #fff;
+}
+
+
+/* float解決方案4
+
+footer>.main {
+    height: 120px;
+    padding-top: 20px;
+}
+
+
+footer>.main>ul {
+    display: flex;
+    float: left;
+}
+
+footer .copyright {
+    float: right;
+} */
+
+
+@media(max-width:992px) {
+    .main>nav>ul {
         flex-direction: column;
     }
-    .main>nav>ul>li{
+
+    .main>nav>ul>li {
         width: 100%;
     }
+
+    .shop_content>.item_wrap>.item_row {
+        flex-direction: column;
+    }
+
+    .shop_content>.item_wrap>.item_row>.item_left {
+        width: 100%;
+    }
+
+    .shop_content>.item_wrap>.item_row>.item_mid {
+        width: 100%;
+        text-align: center;
+    }
+
+    .shop_content>.item_wrap>.item_row>.item_right {
+        width: 100%;
+    }
+
+    .item_mid>.price {
+        font-size: 18px;
+        margin-top: 10px;
+        color: #898000;
+
+    }
+
 }
